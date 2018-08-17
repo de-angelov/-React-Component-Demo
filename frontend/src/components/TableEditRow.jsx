@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import moment from 'moment';    
-import DateTime from 'react-datetime';
+import moment from 'moment';
 import DateTimePicker from 'react-datetime-picker';
-// import DateTimePicker from 'react-datetime-picker/dist/entry.nostyle'
 
 export default class TableEditRow extends Component {
   constructor(props){
