@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import moment from 'moment';
+import moment from 'moment';    
+import DateTime from 'react-datetime';
+import DateTimePicker from 'react-datetime-picker';
+// import DateTimePicker from 'react-datetime-picker/dist/entry.nostyle'
 
 export default class TableEditRow extends Component {
   constructor(props){
@@ -13,6 +16,7 @@ export default class TableEditRow extends Component {
       EventStartDate: props.event.EventStartDate
     }
 
+    this.updateDateTimeValue = this.updateDateTimeValue.bind(this);
     this.updateValue = this.updateValue.bind(this);
     this.updateEvent = this.updateEvent.bind(this);
     this.deleteEvent = this.deleteEvent.bind(this);
@@ -42,9 +46,14 @@ export default class TableEditRow extends Component {
     this.props.deleteEvent(toBeDeletedEvent)
   }
 
+  updateDateTimeValue(date){
+     const EventStartDate = moment(date).format('DD-MM-YYYY HH-mm');
+     this.setState({ EventStartDate });
+  }
+
   updateValue(event){
     if( event.target.name==='EventStartDate' ){
-      const formatedDate = moment(event.target.value,'YYYY-MM-DD HH-mm')
+      const formatedDate = moment(event.target.value,'YYYY-MM-DD HH-mm').format('DD-MM-YYYY HH-mm');
       this.setState({ [event.target.name]: formatedDate});
     }else{
       this.setState({ [event.target.name]: event.target.value });
@@ -53,8 +62,9 @@ export default class TableEditRow extends Component {
 
   render() {
    const txt = this.state.EventStartDate;
-   const formatedDate = moment(txt,'DD-MM-YYYY HH-mm').format('YYYY-MM-DDTHH:mm');
-
+   let momentDate = moment(txt,'DD-MM-YYYY HH-mm');
+  const formatedDate = moment(txt,'DD-MM-YYYY HH-mm').format('YYYY/MM/DD HH:mm:ss');
+  const date = new Date(formatedDate);
    const form = <form className='uiContainer' ref={this.state.EventID}>
     <div className='eventID'>
     <input 
@@ -107,15 +117,13 @@ export default class TableEditRow extends Component {
         onChange = {this.updateValue}
         />
     </div>
-    <div className='eventStartDate'>
-      <input
-        ref='EventStartDate'
-        name='EventStartDate'
-        type='datetime-local'
-        value={formatedDate}
-        onChange = {this.updateValue}
+    <DateTimePicker
+    className='eventStartDatePick'
+      className='input'
+      value = {date}
+      onChange = {this.updateDateTimeValue}
       />
-    </div>
+
     <div ref={`${this.state.EventID}-`} className='controls'>
         <button type='button' onClick={this.updateEvent}>Save</button>
         <button type='button' onClick={this.deleteEvent}>Delete</button>
