@@ -2262,9 +2262,9 @@ In this case, ensure that the file is there with the proper lettercase and thatâ
 **Component Demo**
 includes:
 'port 4000': Node.js that stores information in a eventData.json
-'port 3000': React add,removes and updates beting events 
+'port 3000': React adds,removes and updates betting events 
 
 **To Start**
-enter frontend  folder and type: 'npm start' & 'npm install' 
+enter frontend folder and type: 'npm start' & 'npm install'
 enter backtend folder and type: 'npm start' & 'npm install'
 
