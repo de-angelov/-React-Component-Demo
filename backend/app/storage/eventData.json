@@ -1,0 +1,82 @@
+{
+  "0": {
+    "EventName": "add name",
+    "OddsForFirstTeam": 0,
+    "OddsForDraw": 0,
+    "OddsForSecondTeam": 0,
+    "EventStartDate": "17-08-2018 23:59",
+    "EventID": "0974a60d-19ac-4f71-81d4-beae6dc3e13e"
+  },
+  "1": {
+    "EventName": "add name",
+    "OddsForFirstTeam": 0,
+    "OddsForDraw": 0,
+    "OddsForSecondTeam": 0,
+    "EventStartDate": "17-08-2018 23:59",
+    "EventID": "815ce1f3-0c1e-441b-9d29-b9079c280784"
+  },
+  "2": {
+    "EventID": "1daecc93-02a1-4f71-a4e7-b1fb0a3b7480",
+    "EventName": "add name",
+    "OddsForFirstTeam": "0.06",
+    "OddsForDraw": 0,
+    "OddsForSecondTeam": "0.06",
+    "EventStartDate": "17-08-2018 23:59"
+  },
+  "3": {
+    "EventName": "add name",
+    "OddsForFirstTeam": 0,
+    "OddsForDraw": 0,
+    "OddsForSecondTeam": 0,
+    "EventStartDate": "17-08-2018 23:59",
+    "EventID": "5fa76882-df21-4305-99c6-9d0dccd505dc"
+  },
+  "4": {
+    "EventID": "bc28bfbc-ca0e-4dc3-98b7-f24c45241fe9",
+    "EventName": "add name",
+    "OddsForFirstTeam": 0,
+    "OddsForDraw": 0,
+    "OddsForSecondTeam": 0,
+    "EventStartDate": "17-08-2018 23:59"
+  },
+  "5": {
+    "EventName": "add name",
+    "OddsForFirstTeam": 0,
+    "OddsForDraw": 0,
+    "OddsForSecondTeam": 0,
+    "EventStartDate": "17-08-2018 23:59",
+    "EventID": "5e76d3bf-b2b0-4d18-a307-d8f775c1bc06"
+  },
+  "6": {
+    "EventName": "add name",
+    "OddsForFirstTeam": 0,
+    "OddsForDraw": 0,
+    "OddsForSecondTeam": 0,
+    "EventStartDate": "17-08-2018 23:59",
+    "EventID": "ce7d052d-246e-490d-ba05-682b63f93d37"
+  },
+  "7": {
+    "EventName": "add name",
+    "OddsForFirstTeam": 0,
+    "OddsForDraw": 0,
+    "OddsForSecondTeam": 0,
+    "EventStartDate": "17-08-2018 23:59",
+    "EventID": "4ea3117c-e089-4e77-82e0-2a9b44b2b954"
+  },
+  "8": {
+    "EventID": "a105a8de-c0d1-4ab2-82af-5f5a10c0ad05",
+    "EventName": "add name",
+    "OddsForFirstTeam": 0,
+    "OddsForDraw": 0,
+    "OddsForSecondTeam": 0,
+    "EventStartDate": "2017-08-11T20:59:00.000Z"
+  },
+  "9": {
+    "EventName": "add name",
+    "OddsForFirstTeam": 0,
+    "OddsForDraw": 0,
+    "OddsForSecondTeam": 0,
+    "EventStartDate": "17-08-2018 23:59",
+    "EventID": "6e5d4d05-3b36-4c18-93eb-acbea32d2243"
+  }
+}

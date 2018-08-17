@@ -1,0 +1,94 @@
+.uiContainer {
+  display: grid;
+  grid-template-columns: 150px repeat(8, 1fr) 150px;
+  grid-template-rows: 40px;
+  grid-gap: 0px;
+  min-height: 0;
+  min-width: 0;
+}
+
+.uiContainer input,
+.uiContainer div { 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.eventID {
+  grid-column: 1/3;
+  border: solid 1px black;
+  overflow: hidden;
+  min-width: 0;
+  min-height: 0;
+}
+
+.eventName {
+  grid-column: 3/6;
+  border: solid 1px black;
+  overflow: hidden;
+  min-width: 0;
+  min-height: 0;
+}
+
+.oddsForFirstTeam {
+  grid-column: 6/7;
+  border: solid 1px black;
+  overflow: hidden;
+  min-width: 0;
+  min-height: 0;
+}
+
+.oddsForDraw {
+  grid-column: 7/8;
+  border: solid 1px black;
+  overflow: hidden;
+  min-width: 0;
+  min-height: 0;
+}
+
+.oddsForSecondTeam {
+  grid-column: 8/9;
+  border: solid 1px black;
+  overflow: hidden;
+  min-width: 0;
+  min-height: 0;
+}
+
+.eventStartDate {
+  grid-column: 9/10;
+  border: solid 1px black;
+  overflow: hidden;
+  min-width: 0;
+  font-size: 14px;
+}
+
+.controls {
+  grid-column: 10/11;
+  border: solid 1px black;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.leftButton{
+  grid-column: 1/2;
+}
+
+.rightButton{
+  grid-column: -1/-2;
+}
+
+input[type=text],
+input[type=datetime-local],
+input[type=number] {
+  outline: none;
+  border: none;
+  width: 100%;
+  overflow: hidden;
+  min-width: 0;
+  height: 20px;
+  text-align: center;
+}
+
+.uiContainer div{
+  text-align: center;
+  padding-top: 5px; 
+}
